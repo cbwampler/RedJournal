@@ -1,0 +1,98 @@
+﻿@model RedJournal.Models.Meal.MealDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MealDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MealId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MealId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoodBefore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoodBefore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoodAfter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoodAfter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HungerBefore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HungerBefore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HungerAfter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HungerAfter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WhoWith)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhoWith)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEntered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateEntered)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MealId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
